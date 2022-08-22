@@ -1,0 +1,45 @@
+@import "vars.scss";
+@import "mixin.scss";
+
+.header-title-contant {
+  max-width: 1180px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+}
+
+.header-title-contant__slogo {
+  font-family: "Roboto Serif", serif;
+  font-weight: 600;
+  font-style: Bold;
+  font-size: 54px;
+  line-height: 73.6px;
+  span {
+    color: $basic-red;
+  }
+}
+
+.header-title-contant__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-title-contant__mail,
+.header-title-contant__telefon {
+  justify-self: flex-end;
+  font-weight: 600;
+  font-style: Bold;
+  font-size: 30px;
+  line-height: 38px;
+  color: $basic-black;
+}
+
+.header-title-contant__mail:hover {
+  color: $basic-red;
+}
+
+.header-title-contant__telefon:hover {
+  color: $basic-red;
+}
