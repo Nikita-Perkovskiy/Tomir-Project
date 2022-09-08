@@ -6,14 +6,14 @@ let path = {
     css: project_folder + "/css/",
     js: project_folder + "/js/",
     img: project_folder + "/img/",
-    fonts: project_folder + "/fonts/",
+    // fonts: project_folder + "/fonts/",
   },
   src: {
     html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
     css: source_folder + "/scss/index.scss",
     js: source_folder + "/js/script.js",
     img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
-    fonts: source_folder + "/fonts/*.ttf",
+    // fonts: source_folder + "/fonts/*.ttf",
   },
   watch: {
     html: source_folder + "/**/*.html",
@@ -90,6 +90,7 @@ function css() {
         })
       )
       //.pipe(dest(path.build.css))
+
       .pipe(clean_css())
       .pipe(
         rename({
@@ -101,19 +102,17 @@ function css() {
   );
 }
 function js() {
-  return (
-    src(path.src.js)
-      .pipe(fileinclude())
-      //.pipe(dest(path.build.js))
-      .pipe(uglify())
-      .pipe(
-        rename({
-          extname: ".min.js",
-        })
-      )
-      .pipe(dest(path.build.js))
-      .pipe(browsersync.stream())
-  );
+  return src(path.src.js)
+    .pipe(fileinclude())
+    .pipe(dest(path.build.js))
+    .pipe(uglify())
+    .pipe(
+      rename({
+        extname: ".min.js",
+      })
+    )
+    .pipe(dest(path.build.js))
+    .pipe(browsersync.stream());
 }
 function watchFiles() {
   gulp.watch([path.watch.html], html);

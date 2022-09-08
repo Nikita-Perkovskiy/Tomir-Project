@@ -1,45 +1,92 @@
 @import "vars.scss";
 @import "mixin.scss";
 
-.header-title-contant {
-  max-width: 1180px;
-  margin: auto;
-  padding-left: 10px;
-  padding-right: 10px;
-  display: grid;
-  grid-template-columns: 4fr 1fr 1fr;
+.header-nav-wrapper {
+  @include base-proportion;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 7%;
+  padding-right: 7%;
+  margin-top: 25px;
 }
 
-.header-title-contant__slogo {
-  font-family: "Roboto Serif", serif;
-  font-weight: 600;
-  font-style: Bold;
-  font-size: 54px;
-  line-height: 73.6px;
+.header-nav__telefon-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 7%;
+}
+
+.header-nav__logo {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 56px;
+  color: $base-black;
+  padding-right: 7%;
   span {
-    color: $basic-red;
+    color: $base-gold;
   }
 }
 
-.header-title-contant__wrapper {
-  display: flex;
-  flex-direction: column;
+.header-nav__title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: $base-black;
+  transition: 0.7s;
 }
 
-.header-title-contant__mail,
-.header-title-contant__telefon {
-  justify-self: flex-end;
-  font-weight: 600;
-  font-style: Bold;
-  font-size: 30px;
-  line-height: 38px;
-  color: $basic-black;
+.header-nav__title:hover {
+  color: $base-gold;
 }
 
-.header-title-contant__mail:hover {
-  color: $basic-red;
+.header-nav__telefon {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: $base-gray;
+  transition: 0.7s;
 }
 
-.header-title-contant__telefon:hover {
-  color: $basic-red;
+.header-nav__telefon:hover {
+  color: $base-gold;
+}
+
+.header-slogo__background {
+  position: relative;
+  background-image: url("../img/header-slider-fon.png");
+  min-height: 899px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: opacity 400ms ease-in-out;
+}
+
+.header-slogo__content-wrap {
+  position: absolute;
+  left: 40%;
+  top: 390px;
+  h3 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 61px;
+    color: $base-white;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 61px;
+    color: $base-gold;
+  }
+
+  p {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 37px;
+    color: $base-white;
+  }
 }

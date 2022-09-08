@@ -1,0 +1,55 @@
+@mixin main-titles {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 61px;
+  color: $base-black;
+  text-transform: uppercase;
+}
+
+@mixin base-information-header {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 49px;
+  padding-bottom: 10px;
+  color: $base-gold;
+}
+
+@mixin base-information-content {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $base-black;
+}
+
+@mixin main-button-text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $base-white;
+}
+
+@mixin base-proportion {
+  max-width: 1180px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@mixin slider-button {
+  height: 68px;
+  width: 68px;
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+  font-size: 0;
+  border: none;
+  background-color: $base-gold;
+  border-radius: 50%;
+}
+
+@mixin slider-text {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: $base-white;
+}

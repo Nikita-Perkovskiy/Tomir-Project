@@ -1,0 +1,68 @@
+@import "vars.scss";
+@import "mixin.scss";
+
+.arendation-slider__slogo {
+  @include main-titles;
+  padding-top: 51px;
+  padding-bottom: 60px;
+  text-align: right;
+}
+
+.arendation-slider {
+  @include base-proportion;
+}
+
+.slider {
+  position: relative;
+  .slick-track {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .slick-list {
+    overflow: hidden;
+  }
+
+  .slick-arrow.slick-prev {
+    @include slider-button;
+  }
+
+  .slick-arrow.slick-prev::before {
+    content: url("../img/button-left.svg");
+    position: absolute;
+    left: 35%;
+    top: 30%;
+  }
+
+  .slick-arrow.slick-next {
+    @include slider-button;
+    right: 1%;
+  }
+
+  .slick-arrow.slick-next::after {
+    content: url("../img/button-right.svg");
+    position: absolute;
+    left: 40%;
+    top: 30%;
+  }
+
+  .slick-slide {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.slider__content-wrapper {
+  position: absolute;
+  bottom: 0%;
+  height: 44px;
+  width: 266px;
+  background-color: $base-black;
+  opacity: 85%;
+}
+
+.slider__content {
+  @include slider-text;
+  text-align: center;
+  padding-top: 4%;
+}
