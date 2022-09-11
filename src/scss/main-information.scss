@@ -14,6 +14,7 @@
 
 .base-information__container {
   margin: auto;
+  margin-bottom: 60px;
   position: relative;
   display: grid;
   grid-template-areas:
@@ -98,10 +99,11 @@
   width: 294px;
   height: 50px;
   text-align: center;
+  text-transform: uppercase;
   display: block;
-  margin-top: 60px;
   background-color: $base-gold;
   border: none;
+  cursor: pointer;
   @include main-button-text;
 }
 

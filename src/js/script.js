@@ -12,10 +12,9 @@ function setAnimationHeader() {
   let i = 0;
   function animationHeader() {
     const headerBlockImages = [
-      "../img/header-slider-fon.png",
-      "../img/header-slider-fon.png",
-      "../img/header-slider-fon.png",
-      "../img/header-slider-fon.png",
+      "../img/header-slider-fon-1.png",
+      "../img/header-slider-fon-2.png",
+      "../img/header-slider-fon-3.png",
     ];
     const slogoBlock = document.querySelector(".header-slogo__background");
     slogoBlock.style.backgroundImage = `url(${headerBlockImages[i]})`;
@@ -36,7 +35,7 @@ function onEntry(entry) {
   });
 }
 let observer = new IntersectionObserver(onEntry);
-let elements = document.querySelectorAll(".rr");
+let elements = document.querySelectorAll(".base-information__block-a--action");
 for (let elm of elements) {
   observer.observe(elm);
 }
