@@ -1,0 +1,40 @@
+@import "./basic_classes/vars.scss";
+@import "./basic_classes/mixin.scss";
+@import "./main_page/main-button.scss";
+
+.education-block {
+  margin: auto;
+}
+
+.education-bloc__slogo {
+  @include base-proportion;
+  @include main-titles;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  text-align: right;
+}
+
+.education-block__fon {
+  position: relative;
+  background-image: url("../img/education-block-fon.png");
+  height: 647px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.education-block__wrapper {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.education-block__content {
+  @include main-fon-text;
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 610px;
+}

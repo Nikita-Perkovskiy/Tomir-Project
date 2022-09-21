@@ -1,0 +1,32 @@
+@import "./basic_classes/vars.scss";
+@import "./basic_classes/mixin.scss";
+@import "./main_page/main-button.scss";
+
+.service-block{
+    margin-top: 80px;
+}
+
+.service-block__slogo-wrapper{
+  @include base-proportion;
+}
+
+.service-block__slogo{
+ @include main-titles;
+ text-align: left;
+ padding-left: 20px;
+}
+
+.service-block__text-wrapper{
+  display: flex;
+  justify-content: end; 
+}
+
+.service-block__text{
+  @include main-fon-text;
+  color: $base-gold;
+  text-align: right;
+  max-width: 540px; 
+  padding-right: 20px;
+  padding-top: 30px;
+}
+

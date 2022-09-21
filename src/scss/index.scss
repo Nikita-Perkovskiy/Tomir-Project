@@ -135,10 +135,14 @@ body {
   box-sizing: border-box;
 }
 
-@import "header.scss";
-@import "vars.scss";
-@import "mixin.scss";
-@import "main-information.scss";
-@import "arendation-slider.scss";
-@import "building-services.scss";
-@import url("education-block.scss");
+@import "./main_page/header.scss";
+@import "./basic_classes/vars.scss";
+@import "./basic_classes/mixin.scss";
+@import "./main_page/main-information.scss";
+@import "./main_page/arendation-block.scss";
+@import "./main_page/education-block.scss";
+@import "./main_page/main-button.scss";
+@import "./main_page/service-block.scss";
+@import "./main_page/firm-information-block";
+@import "./main_page/question-block";
+@import "./active-class/active-class.scss";

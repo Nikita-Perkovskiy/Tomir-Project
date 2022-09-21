@@ -1,0 +1,12 @@
+@import "./basic_classes/vars.scss";
+@import "./basic_classes/mixin.scss";
+
+.question-block__content-arrow--active{
+      transform: rotate(45deg);
+}
+
+.question-block__answer-wrapper--active{
+    visibility:  visible;
+    position: static;
+    opacity: 1;
+}

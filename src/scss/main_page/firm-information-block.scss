@@ -1,0 +1,58 @@
+@import "./basic_classes/vars.scss";
+@import "./basic_classes/mixin.scss";
+
+.firm-information-block{
+    @include base-proportion;
+    margin-top: 80px;
+}
+
+.firm-information__slogo{
+ @include main-titles;
+ text-align: right;
+ padding-right: 20px;
+ margin-bottom: 60px;
+}
+
+.firm-information__content{
+    @include base-information-content;
+    width: 623px;
+    text-align: center;
+    margin:auto;
+    span{
+        color: $base-gold;
+    }
+    padding: 45px 72px 45px 72px;
+    border: 3px $base-gold solid;
+}
+
+.firm-information__title-header{
+    margin: auto;
+    margin-top: 40px;
+    @include base-information-content;
+    font-weight: 600;
+    text-align: center;
+    width: 624px;
+}
+
+.firm-information__title-wrapper{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 774px;
+}
+
+.firm-information__title-left{
+    @include base-information-content;
+    font-weight: 600;
+    color: $base-gold;
+    text-align: center;
+    width: 312px;
+}
+
+.firm-information__title-right{
+    @include base-information-content;
+    font-weight: 600;
+    color: $base-gold;
+    text-align: right;
+}

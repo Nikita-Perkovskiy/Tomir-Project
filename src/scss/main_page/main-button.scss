@@ -1,0 +1,19 @@
+@import "./basic_classes/vars.scss";
+@import "./basic_classes/mixin.scss";
+
+.main-button {
+  width: 294px;
+  height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  background-color: $base-gold;
+  border: none;
+  cursor: pointer;
+  @include main-button-text;
+}
+
+.main-button__wrapper {
+  display: flex;
+  justify-content: center;
+}
