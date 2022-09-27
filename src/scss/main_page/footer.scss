@@ -1,0 +1,94 @@
+@import "./basic_classes/vars.scss";
+@import "./basic_classes/mixin.scss";
+
+.footer{
+    margin-top: 120px;
+    background-color: $base-black;
+}
+
+.footer-nav{
+    padding-top: 60px;
+    @include base-proportion;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-nav__left-block{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+column-gap: 62px;
+row-gap: 15px;
+
+a{
+@include footer-content;
+cursor: pointer;
+transition: 0.7s;
+}
+
+a:hover{
+    color: $base-gold;
+}
+}
+
+.footer-nav__right-block{
+    display: grid;
+    grid-template-areas: "a b"
+                         "c c";
+    column-gap: 23px;
+    row-gap: 26px;
+    max-width: 520px;
+  a{
+@include footer-content;
+cursor: pointer;
+transition: 0.7s;
+} 
+
+p{
+ @include footer-content;
+}
+
+a:hover{
+    color: $base-gold;
+}
+}
+
+.footer-nav__right-block__left{
+    grid-area: a;
+}
+
+.footer-nav__right-block__right{
+    grid-area: b;
+}
+
+.footer-nav__right-block__footer{
+    grid-area: c;
+}
+
+.footer-nav__footer{
+   padding-top: 69px;
+   padding-bottom: 40px;
+   @include base-proportion; 
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer-nav__copyright,
+.footer-nav__private-polity{
+  @include footer-content;
+  color: $base-gold;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.footer-nav__slogo{
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 32px;
+  color: $base-white;
+
+   span{
+    color: $base-gold;
+   }
+}

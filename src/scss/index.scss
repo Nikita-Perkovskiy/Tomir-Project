@@ -135,6 +135,10 @@ body {
   box-sizing: border-box;
 }
 
+*{
+  cursor: default;
+}
+
 @import "./main_page/header.scss";
 @import "./basic_classes/vars.scss";
 @import "./basic_classes/mixin.scss";
@@ -143,6 +147,7 @@ body {
 @import "./main_page/education-block.scss";
 @import "./main_page/main-button.scss";
 @import "./main_page/service-block.scss";
-@import "./main_page/firm-information-block";
-@import "./main_page/question-block";
+@import "./main_page/firm-information-block.scss";
+@import "./main_page/question-block.scss";
+@import "./main_page/footer.scss";
 @import "./active-class/active-class.scss";

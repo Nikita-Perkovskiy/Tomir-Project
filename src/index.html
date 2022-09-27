@@ -14,7 +14,7 @@
     <title>TOMIR</title>
   </head>
   <body>
-    <header>
+    <header id="main-block">
       <div class="header-nav-wrapper">
         <h1 class="header-nav__logo"><span>T</span>OM<span>I</span>R</h1>
         <div><a class="header-nav__title" href="#">Głowna</a></div>
@@ -64,7 +64,7 @@
           <button class="main-button" type="button" src="#">Zapytaj o szczegóły</button>
         </div>
       </div>
-      <div class="arendation-block">
+      <div id="catalog-block" class="arendation-block">
          <h3 class="arendation-block__slogo">Wynajem </h3>
          <div class="arendation-block-slider">
           <div class="arendation-block-slider__item">
@@ -114,7 +114,7 @@
           <button class="main-button" type="button" src="#">Przejść do katalogu</button>
         </div>
       </div>
-      <div class="education-block">
+      <div id="edication-block" class="education-block">
         <h3  class="education-bloc__slogo">Szkolenie </h3>
         <div class="education-block__fon">
           <div class="education-block__wrapper">
@@ -125,15 +125,42 @@
            </div>
         </div>
       </div>
-      <div class="service-block">
+      <div id="serwis-page" class="service-block">
         <div class="service-block__slogo-wrapper">
         <h3 class="service-block__slogo">Serwis </h3>
-        <div  class="service-block__text-wrapper">
-        <p class="service-block__text">Posiadamy wykwalifikowaną kadrę serwisantów:</p>
-         </div>
         </div>
+        <div class="service-block__text-wrapper">
+         <p class="service-block__text">Posiadamy wykwalifikowaną kadrę serwisantów:</p>
+        </div>
+        <div class="service-block__content-wrapper">
+          <div class="service-block__content-element-left">
+            <div class="service-block__content-circule"></div>
+            <p class="service-block__content-text">Pogwarancyjne przeglądy konserwacyjne podestów ruchomych i ładowarek teleskopowych</p>
+          </div>
+          <div class="service-block__content-element-right">
+              <p class="service-block__content-text">Przygotowanie do badań UDT oraz uczestnictwo pod czas badania UDT</p>
+          </div>
+          <div class="service-block__content-element-left">
+             <p class="service-block__content-text">Diagnostyka i naprawa podnośników, ładowarek teleskopowych i wózków widłowych</p>
+          </div>
+          <div class="service-block__content-element-right">
+            <p class="service-block__content-text">Dobór potrzebnych części</p>
+          </div>
+          <div class="service-block__content-element-left">
+            <p class="service-block__content-text">Serwis mobilny na terenie całego kraju</p>
+          </div>
+          <div class="service-block__content-element-right">
+            <p class="service-block__content-text">Pomiary rezystancji elektrycznej</p>
+          </div>
+          <div class="service-block__content-element-left">
+           <p class="service-block__content-text">Resurs</p>
+          </div>
+        </div>
+         <div class="main-button__wrapper">
+          <button class="main-button" type="button" src="#">Zapytaj o szczegóły</button>
+         </div>
       </div>
-      <div class="firm-information-block">
+      <div id="about-firm" class="firm-information-block">
         <h3 class="firm-information__slogo">O firmie</h3>
           <p class="firm-information__content">
             Posiadamy własny park podnośników, ładowarek teleskopowych i wózków widłowych. Swoim klientom oferujemy maszyny znanych producentów:
@@ -204,38 +231,40 @@
       </div>
     </div>
     </main>
-    <footer>
-      <div>
-        <div>
-          <a>Usługi</a>
-          <a>O firmie</a>
-          <a>Kontakt </a>
-          <a>Głowna</a>
-          <a>Каталог</a>
-          <a>Обучение</a>
-          <a>Serwis</a>
+    <footer class="footer">
+      <div class="footer-nav">
+        <div class="footer-nav__left-block">
+          <a href="#about-firm">O firmie</a>
+          <a href="#main-block">Głowna</a>
+          <a href="#catalog-block">Каталог</a>
+          <a href="#edication-block">Обучение</a>
+          <a href="#serwis-page">Serwis</a>
         </div>
+        <div class="footer-nav__right-block">
         <div>
-          <a>
-          Tomasz Ochnio 
+          <p> Irina Swiglo-Ochnio</p>
+          <a  class="footer-nav__right-block__left" href="tel:+48 535 818 858">
           tel.: 535 818 858
           </a>
-          <a>
-          Irina Swiglo-Ochnio
+        </div>
+        <div>
+          <p>Tomasz Ochnio </p>
+          <a class="footer-nav__right-block__right" href="tel:+48 696 790 045">
           Tel.: 696 790 045
           </a>
-          <a>
+         </div>
+          <a class="footer-nav__right-block__footer" href="mailto:tomir.szczercow@gmail.com">
           e-mail: tomir.szczercow@gmail.com
           </a>
         </div>
-      </div>
-      <div>
-        <p>© 2022 Все права защищены</p>
-        <h2>
+       </div>
+      <div class="footer-nav__footer">
+        <p class="footer-nav__copyright">© 2022 Все права защищены</p>
+        <h2 class="footer-nav__slogo">
         <span>T</span>OM<span>I</span>R  
         <h2>
-        <p>Политика конфиденциальности<p>
-      </div>
+        <p class="footer-nav__private-polity">Политика конфиденциальности<p>
+    </div>
     </footer>
     <script src=" https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" type="module"></script>

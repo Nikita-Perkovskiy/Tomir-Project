@@ -2,7 +2,8 @@
 @import "./basic_classes/mixin.scss";
 
 .question-block__content-arrow--active{
-      transform: rotate(45deg);
+    transform: rotate(45deg);
+    cursor: pointer;
 }
 
 .question-block__answer-wrapper--active{

@@ -33,6 +33,7 @@
   font-weight: 500;
   line-height: 24px;
   color: $base-black;
+  cursor: pointer;
   transition: 0.7s;
 }
 
@@ -46,6 +47,7 @@
   line-height: 22px;
   color: $base-gray;
   transition: 0.7s;
+  cursor: pointer;
 }
 
 .header-nav__telefon:hover {

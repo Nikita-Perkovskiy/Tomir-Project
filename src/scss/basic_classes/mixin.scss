@@ -77,3 +77,17 @@
   line-height: 37px;
   color: $base-black;
 }
+
+@mixin footer-content{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: $base-white;
+}
+
+@mixin servis-content{
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 31px;
+  color: $base-black;
+}
