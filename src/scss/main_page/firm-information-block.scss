@@ -2,57 +2,64 @@
 @import "./basic_classes/mixin.scss";
 
 .firm-information-block{
-    @include base-proportion;
     margin-top: 80px;
 }
 
 .firm-information__slogo{
  @include main-titles;
+ @include base-proportion;
  text-align: right;
  padding-right: 20px;
  margin-bottom: 60px;
 }
 
-.firm-information__content{
-    @include base-information-content;
-    width: 623px;
+.firm-information__fon{
+position: relative;
+background-image: url("../img/firm-information-fon");
+max-height: 450px;
+height: 100vh;
+background-size: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.firm-information__content-wrapper{
+ @include base-proportion;
+ display: grid;
+ grid-template-areas: 
+            "a a a"
+            "b c d";
+ p{
+  @include base-information-content;
+  padding-top: 30px;
+}
+}
+
+.firm-information__content-element-a{
+    grid-area: a;
+ p{
     text-align: center;
-    margin:auto;
-    span{
-        color: $base-gold;
+    padding: 30px 4% 40px 4%;
+  span{
+    font-weight: 600;
+  }
+ }
+}
+
+.firm-information__content-element-b{
+    grid-area: b;
+     p{
+      max-width: 366px;
     }
-    padding: 45px 72px 45px 72px;
-    border: 3px $base-gold solid;
 }
 
-.firm-information__title-header{
-    margin: auto;
-    margin-top: 40px;
-    @include base-information-content;
-    font-weight: 600;
-    text-align: center;
-    width: 624px;
+.firm-information__content-element-c{
+    grid-area: c;
+     p{
+      max-width: 366px;
+    }
 }
 
-.firm-information__title-wrapper{
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-    width: 774px;
-}
-
-.firm-information__title-left{
-    @include base-information-content;
-    font-weight: 600;
-    color: $base-gold;
-    text-align: center;
-    width: 312px;
-}
-
-.firm-information__title-right{
-    @include base-information-content;
-    font-weight: 600;
-    color: $base-gold;
-    text-align: right;
+.firm-information__content-element-d{
+    grid-area: d;
 }

@@ -27,7 +27,8 @@
   font-weight: 600;
   line-height: 37px;
   color: $base-gold;
-  text-align: right;
+  text-align: center;
+  text-transform: uppercase;
   max-width: 540px; 
   padding-right: 20px;
   padding-top: 30px;
@@ -38,35 +39,31 @@
   @include base-proportion;
   display: grid;
   grid-template-columns: 1fr ;
+  margin-bottom: 60px;
 }
 
-.service-block__content-element-left{
-  padding-bottom: 50px;
+.service-block__content-text-wrapp{
   display: flex;
   justify-content: flex-start;
+  align-items: center;
+  
+   p{
+    margin-left: 30px;
+   }
 }
 
-.service-block__content-element-right{
-  padding-bottom: 50px;
+.service-block__content-text-wrapp-odd{
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+   
+   p{
+    margin-right: 30px;
+   }
 }
 
 .service-block__content-text{
-  @include servis-content;
-  position: relative;
-  max-width: 490px;
-  z-index: 10000;
-}
-
-.service-block__content-text::before{
-  content: " ";
-  position: absolute;
-  left: -10px;
-  top: -10px;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  background-color: $base-gold;
-  z-index: -10000;
+  @include base-information-content;
+  vertical-align: middle;
+  max-width: 640px;
 }
