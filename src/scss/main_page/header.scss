@@ -57,7 +57,9 @@
 .header-slogo__background {
   position: relative;
   background-image: url("../img/header-slider-fon.png");
-  min-height: 899px;
+  background: rgba(0,0,0, .5);
+  max-height: 899px;
+  height: 100vh;
   background-size: 100%;
   background-repeat: no-repeat;
   background-size: cover;

@@ -15,12 +15,13 @@
 
 .firm-information__fon{
 position: relative;
-background-image: url("../img/firm-information-fon");
+background-image: url("../img/firm-information-fon.png");
 max-height: 450px;
 height: 100vh;
-background-size: 100%;
+background-size: 100%;   
 background-repeat: no-repeat;
 background-size: cover;
+opacity: 0.6;
 }
 
 .firm-information__content-wrapper{

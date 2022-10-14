@@ -10,20 +10,6 @@ function asctionSlidr1() {
 
 asctionSlidr1();
 
-function asctionSlidr2() {
-  $(document).ready(function () {
-    $(".realizacion-block-slider").slick({
-      infinite: true,
-      slidesToShow: 4,
-      slidesToScroll: 4,
-    });
-  });
-}
-
-asctionSlidr2();
-
-window.addEventListener("load", setAnimationHeader, onEntry);
-
 function setAnimationHeader() {
   let i = 0;
   function animationHeader() {
@@ -38,10 +24,11 @@ function setAnimationHeader() {
     if (i == headerBlockImages.length) {
       i = 0;
     }
-    console.log(i);
   }
   setInterval(animationHeader, 2000);
 }
+
+window.addEventListener("load", setAnimationHeader, onEntry);
 
 function onEntry(entry) {
   entry.forEach((change) => {
