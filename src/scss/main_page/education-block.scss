@@ -17,7 +17,7 @@
 .education-block__fon {
   position: relative;
   background-image: url("../img/education-block-fon.png");
-  opacity: 0.6;
+  background-color: rgba(0, 0, 0, 0.7);
   max-height: 647px;
   height: 100vh;
   background-size: 100%;
@@ -27,11 +27,14 @@
 
 .education-block__wrapper {
   position: absolute;
-  left: 35%;
+  left: 50%;
   top: 50%;
+  margin-top: -82px;
+  margin-left: -304px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 }
 
 .education-block__content {

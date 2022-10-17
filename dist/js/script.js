@@ -8,7 +8,7 @@ function asctionSlidr1() {
   });
 }
 
-asctionSlidr1();
+
 
 function setAnimationHeader() {
   let i = 0;
@@ -55,4 +55,39 @@ questionArrow.forEach(el =>{
   })
 }
 
+function openForm(){
+  let buttonOpenForm = document.querySelectorAll(".button-open-form");
+  const formFon = document.getElementById("form");
+  buttonOpenForm.forEach(el =>{
+    el.addEventListener("click", ()=>{
+      formFon.classList.toggle("form--active")
+      console.log(el);
+    })
+  })
+}
+
+function closeform(){
+  let buttonCloseForm =  document.getElementById("button-close-form");
+  const formFon = document.getElementById("form");
+    buttonCloseForm.addEventListener("click", ()=>{
+      formFon.classList.toggle("form__fon")
+      console.log(el);
+    })
+  
+}
+
+function activeMenu(){
+  let headerProperties=  document.getElementById("properties-list");
+  const headerNavMenu = document.getElementById("main-nav-menu");
+    headerProperties.addEventListener("click", ()=>{
+      headerNavMenu.classList.toggle("header-nav__menu--active")
+      console.log(headerNavMenu);
+    })
+  
+}
+
+activeMenu();
+closeform();
+openForm();
 activateQuestions();
+asctionSlidr1();

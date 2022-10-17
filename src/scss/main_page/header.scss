@@ -3,6 +3,7 @@
 
 .header-nav-wrapper {
   @include base-proportion;
+  background-color: $base-white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,8 +68,10 @@
 
 .header-slogo__content-wrap {
   position: absolute;
-  left: 40%;
-  top: 390px;
+  left: 50%;
+  top: 50%;
+  margin-top: -90px;
+  margin-left: -162px;
   h3 {
     text-align: center;
     font-size: 50px;
@@ -92,4 +95,60 @@
     line-height: 37px;
     color: $base-white;
   }
+}
+
+.header-nav__title-wrapper{
+  position: relative;
+}
+
+//burger-menu
+
+.header-nav__menu{
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  display:none;
+  flex-direction: column;
+  top: 165%;
+  left:50%;
+  transform:translate(-50%);
+  background-color: $base-gold;
+  transition: 0.7s;
+  z-index: 10000000;
+}
+
+.header-nav__menu-text{
+  display: block;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color: $base-white;
+  cursor: pointer;
+  transition: 0.7s;
+  max-width : 280px;
+  width: 100vw;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.header-nav__menu-text:hover{
+  background-color: $base-white;
+  color: $base-black;
+}
+
+//active
+
+.header-nav__menu--active{
+  visibility: visible;
+  opacity: 1;
+  display:block;
+  position: absolute;
+  flex-direction: column;
+  top: 165%;
+  left:50%;
+  transform:translate(-50%);
+  background-color: $base-gold;
+  transition: 0.7s;
+  z-index: 10000000;
 }

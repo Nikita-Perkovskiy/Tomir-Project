@@ -16,12 +16,11 @@
 .firm-information__fon{
 position: relative;
 background-image: url("../img/firm-information-fon.png");
-max-height: 450px;
-height: 100vh;
+background-color: rgba(0, 0, 0, 0.7);
+height: 450px;
 background-size: 100%;   
 background-repeat: no-repeat;
 background-size: cover;
-opacity: 0.6;
 }
 
 .firm-information__content-wrapper{
@@ -33,6 +32,7 @@ opacity: 0.6;
  p{
   @include base-information-content;
   padding-top: 30px;
+  color: $base-white;
 }
 }
 
