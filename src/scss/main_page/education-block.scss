@@ -43,3 +43,44 @@
   margin-bottom: 40px;
   max-width: 610px;
 }
+
+.education-block__text-wrapper{
+  @include base-proportion;
+  margin-top: 4%;
+}
+
+.education-block__text-header{
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 37px;
+  color: $base-gold;
+  margin-bottom: 3%;
+}
+
+.education-block__text-title{
+position: relative;
+@include base-information-content;
+margin: 2% 0 2% 90px;
+max-width: 900px;
+}
+
+.education-block__text-title::before{
+  position: absolute;
+  content:"";
+  height: 30px;
+  width: 30px;
+  background-color: $base-gold;;
+  border-radius: 50%;
+  top: 50%;
+  margin-top: -15px;
+  left: -70px;
+}
+
+.education-block__footer{
+  @include base-proportion;
+  @include base-information-content;
+  text-align: justify;
+  border: 2px solid $base-gold;
+  padding: 2% 5% 2% 5%;
+  margin-top: 5%;
+}

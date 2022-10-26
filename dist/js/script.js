@@ -77,13 +77,12 @@ function closeform(){
 }
 
 function activeMenu(){
-  let headerProperties=  document.getElementById("properties-list");
+  const headerProperties=  document.getElementById("properties-list");
   const headerNavMenu = document.getElementById("main-nav-menu");
-    headerProperties.addEventListener("click", ()=>{
+
+  headerProperties.addEventListener("click", ()=>{
       headerNavMenu.classList.toggle("header-nav__menu--active")
-      console.log(headerNavMenu);
     })
-  
 }
 
 activeMenu();
