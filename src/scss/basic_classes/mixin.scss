@@ -85,3 +85,10 @@
   color: $base-white;
 }
 
+@mixin catalog-section__slogo{
+  text-align: left;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 37px;
+  color: $base-black;
+}

@@ -1,0 +1,24 @@
+@import "./basic_classes/vars.scss";
+@import "./basic_classes/mixin.scss";
+
+.catalog-section__card{
+    position: relative;
+}
+
+.catalog-section__content-wrapper{
+  position: absolute;
+  bottom: 0%;
+  max-height: 44px;
+  height: 100vh;
+  max-width: 266px;
+  width:100vw;
+  background-color: $base-black;
+  opacity: 85%;
+}
+
+.catalog-section__content{
+  @include slider-text;
+  text-align: center;
+  padding-top: 4%;
+  cursor: pointer;
+}

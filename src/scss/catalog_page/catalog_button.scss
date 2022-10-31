@@ -1,0 +1,11 @@
+@import "./basic_classes/vars.scss";
+@import "./basic_classes/mixin.scss";
+
+.catalog-section__button{
+    margin: auto;
+    margin-top: 40px;
+    height: 30px;
+    width: 90px;
+    background-color: $base-black;
+    cursor: pointer;
+}

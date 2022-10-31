@@ -2,8 +2,10 @@
 @import "./basic_classes/mixin.scss";
 
 .main-button {
-  width: 294px;
-  height: 50px;
+   max-width: 294px;
+  width: 100vw;
+  max-height: 50px;
+  height: 100vh;
   text-align: center;
   text-transform: uppercase;
   display: block;
@@ -16,4 +18,17 @@
 .main-button__wrapper {
   display: flex;
   justify-content: center;
+}
+
+.toCatolog-Button{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: inline-block;
+  max-width: 294px;
+  width: 100vw;
+  cursor: pointer;
+  @include main-button-text;
+  background-color: $base-gold;
+  text-align: center;
+  text-transform: uppercase;
 }

@@ -59,8 +59,10 @@
 .arendation-block-slider__content-wrapper {
   position: absolute;
   bottom: 0%;
-  height: 44px;
-  width: 266px;
+   max-height: 44px;
+  height: 100vh;
+  max-width: 266px;
+  width:100vw;
   background-color: $base-black;
   opacity: 85%;
 }

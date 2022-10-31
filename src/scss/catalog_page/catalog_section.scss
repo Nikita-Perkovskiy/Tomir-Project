@@ -1,0 +1,18 @@
+@import "./basic_classes/vars.scss";
+@import "./basic_classes/mixin.scss";
+
+.catalog-section{
+    @include base-proportion;
+    margin-top: 40px;
+}
+
+.catalog-section__slogo{
+    @include catalog-section__slogo;
+    margin-bottom: 40px;
+}
+
+.catalog-section__layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+}
