@@ -40,11 +40,12 @@
   width: 68px;
   position: absolute;
   top: 40%;
-  z-index: 100;
+  z-index: 1000000;
   font-size: 0;
   border: none;
   background-color: $base-gold;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 @mixin slider-text {
