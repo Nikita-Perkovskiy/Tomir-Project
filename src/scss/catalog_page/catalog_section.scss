@@ -3,7 +3,6 @@
 
 .catalog-section{
     @include base-proportion;
-    margin-top: 40px;
 }
 
 .catalog-section__slogo{
@@ -11,8 +10,17 @@
     margin-bottom: 40px;
 }
 
+.catalog-section__layout-none{
+ opacity: 0;
+ height: 0px; 
+}
+
 .catalog-section__layout{
+    height: auto;
+    margin-top: 40px;
+    opacity: 1;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 266px), 1fr));
     gap: 40px;
+     transition: opacity  2s ease-in-out;  
 }

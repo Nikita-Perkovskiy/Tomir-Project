@@ -8,21 +8,6 @@ function asctionSlidr1() {
   });
 }
 
-function asctionSlidr2() {
-  $(document).ready(function () {
-    $(".catalog-open-card__slider-wrapper").slick({
-  dots: true,
-  infinite: true,
-  speed: 500,
-  fade: true,
-  cssEase: 'linear'
-})
-  });
-  
-}
-
-asctionSlidr2()
-
 
 function setAnimationHeader() {
   let i = 0;
