@@ -13,6 +13,9 @@
 .catalog-section__layout-none{
  opacity: 0;
  height: 0px; 
+ visibility: hidden;
+
+// display: none;
 }
 
 .catalog-section__layout{
@@ -20,7 +23,8 @@
     margin-top: 40px;
     opacity: 1;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 266px), 1fr));
-    gap: 40px;
-     transition: opacity  2s ease-in-out;  
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+    transition: opacity  2s ease-in-out;  
 }

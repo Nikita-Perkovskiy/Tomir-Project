@@ -84,6 +84,14 @@ function activeMenu(){
     })
 }
 
+const menu = document.querySelector('.hamburger'); 
+ const headerNavMenu = document.getElementById("main-nav-menu");
+
+menu.addEventListener('click', () => { 
+	menu.classList.toggle('hamburger--active'), 
+  headerNavMenu.classList.toggle("header-nav__menu--active");
+});
+
 activeMenu();
 closeform();
 openForm();
