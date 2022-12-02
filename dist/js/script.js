@@ -65,15 +65,15 @@ function openForm(){
   })
 }
 
-function closeform(){
-  let buttonCloseForm =  document.getElementById("button-close-form");
-  const formFon = document.getElementById("form");
-    buttonCloseForm.addEventListener("click", ()=>{
-      formFon.classList.toggle("form__fon")
-      console.log(el);
-    })
+// function closeform(){
+//   let buttonCloseForm =  document.getElementById("button-close-form");
+//   const formFon = document.getElementById("form");
+//     buttonCloseForm.addEventListener("click", ()=>{
+//       formFon.classList.toggle("form__fon")
+//       console.log(el);
+//     })
   
-}
+// }
 
 function activeMenu(){
   const headerProperties=  document.getElementById("properties-list");
@@ -84,16 +84,19 @@ function activeMenu(){
     })
 }
 
+function activeBurger(){
 const menu = document.querySelector('.hamburger'); 
- const headerNavMenu = document.getElementById("main-nav-menu");
+const headerNavMenu = document.getElementById("main-nav-menu");
 
 menu.addEventListener('click', () => { 
 	menu.classList.toggle('hamburger--active'), 
   headerNavMenu.classList.toggle("header-nav__menu--active");
 });
+}
 
 activeMenu();
-closeform();
+// closeform();
 openForm();
 activateQuestions();
 asctionSlidr1();
+activeBurger();

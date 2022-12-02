@@ -1,7 +1,30 @@
+@mixin base-proportion {
+  max-width: 1180px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 @mixin main-titles {
   font-size: 50px;
   font-weight: 400;
   line-height: 61px;
+  color: $base-black;
+  text-transform: uppercase;
+}
+
+@mixin main-titles-1000px {
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 45px;
+  color: $base-black;
+  text-transform: uppercase;
+}
+
+@mixin main-titles-790px {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
   color: $base-black;
   text-transform: uppercase;
 }
@@ -21,6 +44,20 @@
   color: $base-black;
 }
 
+@mixin base-information-content-1000px {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $base-black;
+}
+
+@mixin base-information-content-720px {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $base-black;
+}
+
 @mixin main-button-text {
   font-size: 20px;
   font-weight: 700;
@@ -28,11 +65,18 @@
   color: $base-white;
 }
 
-@mixin base-proportion {
-  max-width: 1180px;
-  margin: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+@mixin main-button-text-1000px {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  color: $base-white;
+}
+
+@mixin main-button-text-790px {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $base-white;
 }
 
 @mixin slider-button {
@@ -48,10 +92,40 @@
   cursor: pointer;
 }
 
+@mixin slider-button-790px {
+  height: 68px;
+  width: 68px;
+  position: absolute;
+  top: 40%;
+  z-index: 1000000;
+  font-size: 0;
+  border: none;
+  opacity: 0.6;
+  // background-color: rgba(255,245,215,0.5);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 @mixin slider-text {
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
+  text-transform: uppercase;
+  color: $base-white;
+}
+
+@mixin slider-text-1000px {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $base-white;
+}
+
+@mixin slider-text-790px {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
   text-transform: uppercase;
   color: $base-white;
 }
@@ -63,6 +137,13 @@
   color: $base-white;
 }
 
+@mixin main-fon-text-720px {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 18px;
+  color: $base-white;
+}
+
 @mixin question-number{
   text-align: center;
   font-size: 50px;
@@ -71,11 +152,44 @@
   color: $base-gold;
 }
 
+@mixin question-number-1000px{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 51px;
+  color: $base-gold;
+}
+
+@mixin question-number-790px{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 41px;
+  color: $base-gold;
+}
+
+
 @mixin question-content{
   text-align: center;
   font-size: 30px;
   font-weight: 400;
   line-height: 37px;
+  color: $base-black;
+}
+
+@mixin question-content-1000px{
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  color: $base-black;
+}
+
+@mixin question-content-790px{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
   color: $base-black;
 }
 

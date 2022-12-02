@@ -107,6 +107,15 @@
   position: relative;
 }
 
+.header-nav__burger{
+  display: none;
+}
+
+.header-nav__burger-wrapper{
+  display: flex;
+  justify-content: flex-end;
+}
+
 @media (max-width: 1000px) {
   .header-nav__title {
   font-size: 16px;
@@ -147,6 +156,7 @@
 
 .header-nav__telefon-wrapper{
   grid-area: a; 
+  text-align: left;
 }
 .header-nav-wrapper {
   display: grid;
@@ -181,10 +191,6 @@
   grid-area: c;
 }
 
-}
-
-.header-nav__burger{
-  display: none;
 }
 
 //burger-menu
@@ -237,4 +243,23 @@
   background-color: $base-gold;
   transition: 0.7s;
   z-index: 10000000;
+}
+
+@media (max-width: 790px) {
+
+ .header-nav__menu-text{
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: $base-white;
+  cursor: pointer;
+  transition: 0.7s;
+  max-width : 180px;
+  width: 100vw;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
 }

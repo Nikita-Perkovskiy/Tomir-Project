@@ -32,3 +32,49 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+@media (max-width: 1000px) {
+.main-button {
+  max-width: 204px;
+  max-height: 40px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.toCatolog-Button{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: inline-block;
+  max-width: 294px;
+  width: 100vw;
+  cursor: pointer;
+  @include main-button-text-1000px;
+  background-color: $base-gold;
+  text-align: center;
+  text-transform: uppercase;
+}
+}
+
+@media (max-width: 790px){
+.toCatolog-Button{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+  max-width: 224px;
+  width: 100vw;
+  cursor: pointer;
+  @include main-button-text-790px;
+  background-color: $base-gold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-button {
+  max-width: 204px;
+  max-height: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+}
+}

@@ -11,6 +11,7 @@
   @include main-titles;
   padding-top: 100px;
   padding-bottom: 60px;
+  padding-right: 30px;
   text-align: right;
 }
 
@@ -50,9 +51,7 @@
 }
 
 .education-block__text-header{
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 37px;
+  @include main-fon-text;
   color: $base-gold;
   margin-bottom: 3%;
 }
@@ -82,5 +81,65 @@ max-width: 900px;
   text-align: justify;
   border: 2px solid $base-gold;
   padding: 2% 5% 2% 5%;
-  margin-top: 5%;
+}
+
+@media (max-width: 1000px) {
+  .education-bloc__slogo {
+     @include main-titles-1000px;
+  }
+  .education-block__text-title{
+     @include base-information-content-1000px;
+  }
+
+  .education-block__footer{
+  @include base-information-content-1000px;
+  margin: 5% 1% 0% 1%;
+}
+}
+
+@media (max-width: 790px) {
+   .education-bloc__slogo {
+     @include main-titles-790px;
+     text-align: center;
+  }
+
+  .education-block__footer{
+  margin: 5% 1% 0% 1%;
+}
+}
+
+@media (max-width: 720px) {
+ .education-block__content {
+  @include main-fon-text-720px;
+  margin-bottom: 0px;
+  max-width: 320px;
+}
+
+.education-block__wrapper {
+  margin-top: -27px;
+ margin-left: -160px;
+}
+
+.education-block__text-header{
+  @include main-fon-text-720px;
+  color: $base-gold;
+  padding-right: 20px;
+  margin-bottom: 5%;
+}
+
+.education-block__text-title{
+     @include base-information-content-720px;
+  }
+
+  .education-block__text-title::before{
+  height: 20px;
+  width: 20px;
+  margin-top: -10px;
+  left: -60px;
+}
+
+.education-block__footer{
+  @include base-information-content-720px;
+  margin: 5% 1% 0% 1%;
+}
 }

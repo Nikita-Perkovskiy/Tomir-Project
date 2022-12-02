@@ -13,7 +13,7 @@
 .service-block__slogo{
  @include main-titles;
  text-align: left;
- padding-left: 20px;
+ padding-left: 30px;
 }
 
 .service-block__text-wrapper{
@@ -23,9 +23,7 @@
 }
 
 .service-block__text{
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 37px;
+  @include main-fon-text;
   color: $base-gold;
   text-align: center;
   text-transform: uppercase;
@@ -66,4 +64,43 @@
   @include base-information-content;
   vertical-align: middle;
   max-width: 640px;
+}
+
+@media (max-width: 1000px){
+.service-block__slogo{
+ @include main-titles-1000px;
+ text-align: left;
+ padding-left: 30px;
+}
+.service-block__content-text{
+  @include base-information-content-1000px;
+  vertical-align: middle;
+  max-width: 640px;
+}
+}
+
+@media (max-width: 790px) {
+  .service-block__slogo{
+ @include main-titles-790px;
+ text-align: center;
+ padding-left: 0px;
+ margin-bottom: 20px;
+}
+
+ .service-block__content-text{
+  @include base-information-content-720px;
+  vertical-align: middle;
+  max-width: 640px;
+}
+
+.service-block__text{
+  @include main-fon-text-720px;
+  color: $base-gold;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 540px; 
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
 }
