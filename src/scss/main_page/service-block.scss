@@ -67,6 +67,12 @@
 }
 
 @media (max-width: 1000px){
+.service-block__content-title{
+  img{
+    width: 100px;
+  }
+}
+
 .service-block__slogo{
  @include main-titles-1000px;
  text-align: left;
@@ -77,6 +83,7 @@
   vertical-align: middle;
   max-width: 640px;
 }
+
 }
 
 @media (max-width: 790px) {
@@ -102,5 +109,17 @@
   padding-right: 20px;
   padding-top: 30px;
   padding-bottom: 60px;
+}
+}
+
+@media (max-width: 550px) {
+  .service-block__content-title{
+  img{
+    width: 60px;
+  }
+}
+
+.service-block__content-text{
+  @include base-information-content-550px;
 }
 }

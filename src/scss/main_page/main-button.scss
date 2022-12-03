@@ -2,27 +2,8 @@
 @import "./basic_classes/mixin.scss";
 
 .main-button {
-   max-width: 294px;
-  width: 100vw;
-  max-height: 50px;
-  height: 100vh;
-  text-align: center;
-  text-transform: uppercase;
-  display: block;
-  background-color: $base-gold;
-  border: none;
-  cursor: pointer;
-  @include main-button-text;
-}
-
-.main-button__wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.toCatolog-Button{
-  padding-top: 12px;
-  padding-bottom: 12px;
+ padding-bottom: 12px;
+ padding-top: 12px;
   display: inline-block;
   max-width: 294px;
   width: 100vw;
@@ -31,6 +12,12 @@
   background-color: $base-gold;
   text-align: center;
   text-transform: uppercase;
+}
+
+.main-button__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 1000px) {

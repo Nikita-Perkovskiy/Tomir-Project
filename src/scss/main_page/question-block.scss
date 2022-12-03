@@ -14,8 +14,8 @@
 }
 
 .question-block__content-element{ 
-    margin-top: 60px;
     hr{
+    margin-top: 60px;   
     margin-right: 30%;
     } 
 }
@@ -23,25 +23,42 @@
 .question-block__content{
     margin: auto;
     max-width: 1180px;
+    padding-top: 10px;
     padding-left: 10px;
     padding-right: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start
-;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
 
     span{
         @include question-number;
-        padding-left: 90px;
     }
 
    :nth-child(2){
         @include question-content;
-        max-width: 450px;
+        max-width: 650px;
         width: 100vw;
         min-height: 80px;
         text-align: center;
     }
+}
+
+.question-block__content-number{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.question-block__content-text{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.question-block__content-arrow-el{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 
 .question-block__content-arrow{
@@ -61,19 +78,24 @@
     position: fixed;
     opacity: 0;
     justify-content: flex-end;
-    margin: 3% 2% 3% 2%; 
+    margin: auto;
     padding: 2% 2% 2% 2%;
     transition: opacity  2s ease-in-out;  
-    border: 2px solid $base-gold;
 }
 
 .question-block__answer{
     @include question-content;
+     padding: 2% 2% 2% 2%;
     text-align: justify;
+    border: 2px solid $base-gold;
 }
 
 
 @media (max-width: 1000px) {
+.question-block{
+    margin-top: 74px;
+}
+
 .question-block__slogo{
  @include main-titles-1000px;
   margin-bottom: 74px;
@@ -90,14 +112,12 @@
 
     span{
         @include question-number-1000px;
-        // padding-left: 90px;
     }
 
    :nth-child(2){
         @include question-content-1000px;
         max-width: 450px;
         width: 100vw;
-        min-height: 80px;
         text-align: center;
     }
 }
@@ -117,14 +137,24 @@
 }
 
 .question-block__content-element{ 
-    margin-top: 60px;
+    margin-top: 30px;
     hr{
+    margin-right: 20%;
+    } 
+}
+
+.question-block__content-element{ 
+    hr{
+    margin-top: 30px;   
     margin-right: 20%;
     } 
 }
 }
 
 @media (max-width: 790px) {
+.question-block{
+    margin-top: 54px;
+}
 
 .question-block__slogo{
  @include main-titles-790px;
@@ -139,32 +169,30 @@ padding-right: 0px;
     padding-left: 10px;
     padding-right: 20px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
-    //flex-direction: row-reverse;
 
     span{
         @include question-number-790px;
-        padding-left: 90px;
+        padding-left: 0px;
     }
 
    :nth-child(2){
         @include question-content-790px;
         max-width: 450px;
         width: 100vw;
-        min-height: 80px;
+        min-height: 40px;
         text-align: center;
     }
 }
 
 .question-block__content-arrow{
-    width: 13px;
-    height: 13px;
+    width: 12px;
+    height: 12px;
     border-top: 3px solid $base-gold;
     border-right: 3px solid $base-gold;
     transform: rotate(135deg);
     cursor: pointer;
-    margin: 15px 15px 15px 15px;
 }
 
 .question-block__answer{
@@ -172,4 +200,67 @@ padding-right: 0px;
     text-align: justify;
 }
 
+.footer-nav__footer-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.question-block__content-element{ 
+    hr{
+    margin-top: 20px;   
+    margin-right: 20%;
+    } 
+}
+
+}
+
+@media (max-width: 550px) {
+.question-block{
+    margin-top: 44px;
+}
+
+.question-block__content{
+    margin: auto;
+    max-width: 1180px;
+    padding-left: 10px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    span{
+        @include question-number-550px;
+        padding-left: 0px;
+    }
+
+   :nth-child(2){
+        @include question-content-550px;
+        max-width: 250px;
+        font-weight: 400;
+        width: 100vw;
+        min-height: 0px;
+        text-align: center;
+    }
+}
+
+.question-block__answer{
+    @include question-content-550px;
+    text-align: justify;
+}
+
+.question-block__content-arrow{
+    width: 10px;
+    height: 10px;
+    border-top: 2.5px solid $base-gold;
+    border-right: 2,5px solid $base-gold;
+    transform: rotate(135deg);
+    cursor: pointer;
+}
+
+.question-block__content-element{ 
+    hr{
+    margin-top: 20px;   
+    margin-right: 20%;
+    } 
+}
 }

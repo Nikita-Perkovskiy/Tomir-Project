@@ -102,6 +102,16 @@ background-size: cover;
   color: $base-white;
 }
 }
+}
 
+@media (max-width: 550px) {
+  .firm-information__content-wrapper{
+ p{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $base-white;
+}
+}
 }
 

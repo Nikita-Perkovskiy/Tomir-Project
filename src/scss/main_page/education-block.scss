@@ -95,6 +95,10 @@ max-width: 900px;
   @include base-information-content-1000px;
   margin: 5% 1% 0% 1%;
 }
+
+.education-block__text-header{
+  margin-bottom: 4%;
+}
 }
 
 @media (max-width: 790px) {
@@ -141,5 +145,21 @@ max-width: 900px;
 .education-block__footer{
   @include base-information-content-720px;
   margin: 5% 1% 0% 1%;
+}
+}
+
+
+@media (max-width: 550px) {
+  .education-block__footer{
+  @include base-information-content-550px;
+  margin: 5% 1% 0% 1%;
+}
+
+.education-block__text-title{
+     @include base-information-content-550px;
+  }
+
+.education-block__text-header{
+  margin-bottom: 5%;
 }
 }
