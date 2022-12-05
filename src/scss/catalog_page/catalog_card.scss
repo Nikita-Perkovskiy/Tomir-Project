@@ -2,11 +2,11 @@
 @import "./basic_classes/mixin.scss";
 
 .catalog-section__card{
+  margin-top: 40px;
   position: relative;
   max-width: 266px;
-  width: 100vh;
-  max-height: 379px;
-  height: 100vh;
+  width: 100vw;
+  height: 349px;
 }
 
 .catalog-section__card-front{
@@ -24,6 +24,9 @@
 
 .catalog-section__content-wrapper{
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   left: 0%;
   bottom: 0%;
@@ -84,4 +87,46 @@
     overflow: hidden;
     transform: perspective(600px) rotateY(0deg);
   }
+}
+
+@media (max-width: 1000px) {
+  .catalog-section__card{
+  max-width: 214px;
+  height: 280px;
+}
+
+.catalog-section__content-wrapper{
+  max-width: 214px;
+}
+
+.catalog-section__content-text{
+ @include slider-text-1000px;
+ font-size: 14px;
+}
+
+.catalog-section__content-header{
+  @include slider-text-1000px;
+}
+
+}
+
+@media (max-width: 790px) {
+  .catalog-section__card{
+  max-width: 156px;
+  height: 220px;
+}
+
+.catalog-section__content-wrapper{
+  max-width: 156px;
+}
+
+.catalog-section__content-text{
+ @include slider-text-790px;
+ font-size: 10px;
+}
+
+.catalog-section__content-header{
+  @include slider-text-790px;
+}
+
 }

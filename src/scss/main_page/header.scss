@@ -184,6 +184,7 @@
   .header-nav__telefon {
   font-size: 10px;
   line-height: 12px;
+  font-weight: 700;
 }
 
 .header-nav__burger{
@@ -260,6 +261,14 @@
   width: 100vw;
   padding-top: 10%;
   padding-bottom: 10%;
+}
+
+.header-nav__catalog-title{
+    font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: $base-black;
+  cursor: pointer;
 }
 
 }

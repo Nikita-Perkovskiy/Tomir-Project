@@ -2,11 +2,64 @@
 @import "./basic_classes/mixin.scss";
 
 .catalog-section__button{
-    margin: auto;
-    margin-top: 90px;
-    height: 30px;
-    width: 90px;
-    background-color: $base-black;
-    color: $base-white;
-    cursor: pointer;
+  @include main-button;
+  @include main-button-text;
+  padding-left: 6px;
+  position: relative;
+  text-align: left;
 }
+
+.catalog-section__button-wrapper{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog-section__button-arrow{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid $base-white;
+    border-right: 3px solid $base-white;
+    transform: rotate(135deg);
+    cursor: pointer;
+    top: 50%;
+    right: 10%;
+    margin-top: -9px;
+}
+
+@media (max-width: 1000px) {
+  .catalog-section__button-wrapper{
+  margin-top: 45px;
+}
+
+.catalog-section__button{
+   @include main-button-1000px;
+  @include main-button-text-1000px; 
+    position: relative;
+  text-align: left;
+}
+
+.catalog-section__button-arrow{
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid $base-white;
+    border-right: 2px solid $base-white;
+    margin-top: -6px;
+}
+}
+
+@media (max-width: 790px) {
+  .catalog-section__button-wrapper{
+  margin-top: 45px;
+}
+
+.catalog-section__button{
+  @include main-button-text-1000px; 
+}
+}
+
+
+
+

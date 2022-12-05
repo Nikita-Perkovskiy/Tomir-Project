@@ -11,20 +11,40 @@
 }
 
 .catalog-section__layout-none{
- opacity: 0;
- height: 0px; 
- visibility: hidden;
-
-// display: none;
+visibility: hidden;
+position: fixed;
+opacity: 0;
 }
 
 .catalog-section__layout{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     height: auto;
-    margin-top: 40px;
     opacity: 1;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 40px;
-    row-gap: 40px;
     transition: opacity  2s ease-in-out;  
+    visibility:  visible;
+    position: static;
+    opacity: 1;
+}
+
+@media (max-width: 1000px) {
+    .catalog-section__slogo{
+    @include catalog-section__slogo-1000px;
+    margin-bottom: 30px;
+}
+}
+
+@media (max-width: 790px) {
+   .catalog-section__layout{
+    justify-content: space-around;
+} 
+}
+
+@media (max-width: 720px) {
+   .catalog-section__slogo{
+    @include catalog-section__slogo-1000px;
+    margin-bottom: 20px;
+}
 }

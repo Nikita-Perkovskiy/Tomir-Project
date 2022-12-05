@@ -10,3 +10,30 @@
     font-weight: 400;
     color: $base-gold;
 }
+
+@media (max-width: 1000px) {
+.catalog__heder-slogo{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 43px;
+    line-height: 48px;
+    }
+}
+
+@media (max-width: 790px) {
+.catalog__heder-slogo{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 42px;
+    }
+}
+
+@media (max-width: 790px) {
+.catalog__heder-slogo{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 28px;
+    }
+}

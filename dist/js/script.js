@@ -54,27 +54,6 @@ questionArrow.forEach(el =>{
   })
 }
 
-function openForm(){
-  let buttonOpenForm = document.querySelectorAll(".button-open-form");
-  const formFon = document.getElementById("form");
-  buttonOpenForm.forEach(el =>{
-    el.addEventListener("click", ()=>{
-      formFon.classList.toggle("form--active")
-      console.log(el);
-    })
-  })
-}
-
-// function closeform(){
-//   let buttonCloseForm =  document.getElementById("button-close-form");
-//   const formFon = document.getElementById("form");
-//     buttonCloseForm.addEventListener("click", ()=>{
-//       formFon.classList.toggle("form__fon")
-//       console.log(el);
-//     })
-  
-// }
-
 function activeMenu(){
   const headerProperties=  document.getElementById("properties-list");
   const headerNavMenu = document.getElementById("main-nav-menu");
@@ -95,8 +74,6 @@ menu.addEventListener('click', () => {
 }
 
 activeMenu();
-// closeform();
-openForm();
 activateQuestions();
 asctionSlidr1();
 activeBurger();

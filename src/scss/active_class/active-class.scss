@@ -12,3 +12,8 @@
     opacity: 1;
 }
 
+.catalog-section__button-arrow--active{
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
