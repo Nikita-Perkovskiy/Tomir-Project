@@ -71,7 +71,7 @@
   left: 50%;
   top: 50%;
   margin-top: -90px;
-  margin-left: -360px;
+  margin-left: -175px;
   h3 {
     text-align: center;
     font-size: 50px;
@@ -111,9 +111,18 @@
   display: none;
 }
 
+.footer-nav__svg-wrapper{
+  display: flex;
+  justify-content: flex-start;
+}
+
 .header-nav__burger-wrapper{
   display: flex;
   justify-content: flex-end;
+}
+
+.footer-nav__svg-item{
+  margin: 1px 3px 1px 0px;
 }
 
 @media (max-width: 1000px) {
@@ -190,6 +199,15 @@
 .header-nav__burger{
   display: block;
   grid-area: c;
+}
+
+.footer-nav__svg-item{
+  margin: 1px 3px 1px 0px;
+
+  svg{
+  height: 20px;
+  width: 20px;
+  }
 }
 
 }

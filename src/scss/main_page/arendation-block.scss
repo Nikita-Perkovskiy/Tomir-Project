@@ -46,8 +46,7 @@
     content: url("../img/button-right.svg");
     position: absolute;
     left: 40%;
-    top: 30%;
-    cursor: pointer;
+    top: 30%    cursor: pointer;
   }
 
   .slick-slide {
@@ -55,6 +54,14 @@
     padding-right: 10px;
   }
 }
+
+// .arendation-block-slider__item{
+//   img{
+//       max-width: 266px;
+//   width: 100vw;
+//   height: 349px;
+//   }
+// }
 
 .arendation-block-slider__content-wrapper {
   position: absolute;
