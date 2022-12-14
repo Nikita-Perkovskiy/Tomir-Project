@@ -6,7 +6,7 @@
   @include main-button-text;
   padding-left: 6px;
   position: relative;
-  text-align: left;
+  text-align: center;
 }
 
 .catalog-section__button-wrapper{
@@ -14,19 +14,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.catalog-section__button-arrow{
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-top: 3px solid $base-white;
-    border-right: 3px solid $base-white;
-    transform: rotate(135deg);
-    cursor: pointer;
-    top: 50%;
-    right: 10%;
-    margin-top: -9px;
 }
 
 @media (max-width: 1000px) {
@@ -38,15 +25,7 @@
    @include main-button-1000px;
   @include main-button-text-1000px; 
     position: relative;
-  text-align: left;
-}
-
-.catalog-section__button-arrow{
-    width: 8px;
-    height: 8px;
-    border-top: 2px solid $base-white;
-    border-right: 2px solid $base-white;
-    margin-top: -6px;
+  text-align: center;
 }
 }
 
@@ -59,6 +38,15 @@
   @include main-button-text-1000px; 
 }
 }
+
+@media (max-width: 550px) {
+.catalog-section__button{
+ padding-bottom: 10px;
+  padding-top: 10px;
+  max-width: 204px;
+  }}
+
+
 
 
 
