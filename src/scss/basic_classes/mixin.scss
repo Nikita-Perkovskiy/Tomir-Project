@@ -106,9 +106,9 @@
 }
 
 @mixin main-button-text-790px {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 18px;
   color: $base-white;
 }
 
@@ -152,7 +152,7 @@
   font-weight: 600;
   line-height: 18px;
   text-transform: uppercase;
-  color: $base-white;
+  color: $base-gold;
 }
 
 @mixin slider-text-790px {
@@ -160,7 +160,7 @@
   font-weight: 600;
   line-height: 16px;
   text-transform: uppercase;
-  color: $base-white;
+  color: $base-gold;
 }
 
 @mixin main-fon-text {
@@ -275,17 +275,26 @@
 @mixin catalog-section__slogo-1000px{
   text-align: left;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 28px;
   color: $base-black;
 }
 
-@mixin catalog-section__slogo-1000px{
+@mixin catalog-section__slogo-720px{
   text-align: left;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
+  color: $base-black;
+}
+
+@mixin catalog-section__slogo-550px{
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
   color: $base-black;
 }

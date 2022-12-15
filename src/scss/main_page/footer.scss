@@ -156,6 +156,15 @@ a:hover{
 }
 }
 
+.footer-nav__svg-wrapper{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-nav__svg-item{
+  margin: 1px 3px 1px 0px;
+}
+
 @media (max-width: 790px){
 .footer{
     margin-top: 80px;
@@ -193,6 +202,13 @@ a:hover{
     padding-top: 40px;
     @include base-proportion;
     display: block;
+}
+
+.footer-nav__svg-item{
+  svg{
+  height: 20px;
+  width: 20px;
+  }
 }
 }
 

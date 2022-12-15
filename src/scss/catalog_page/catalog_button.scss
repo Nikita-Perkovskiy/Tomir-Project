@@ -31,11 +31,11 @@
 
 @media (max-width: 790px) {
   .catalog-section__button-wrapper{
-  margin-top: 45px;
+  margin-top: 25px;
 }
 
 .catalog-section__button{
-  @include main-button-text-1000px; 
+  @include main-button-text-790px; 
 }
 }
 
@@ -43,7 +43,7 @@
 .catalog-section__button{
  padding-bottom: 10px;
   padding-top: 10px;
-  max-width: 204px;
+  max-width: 170px;
   }}
 
 
