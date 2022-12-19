@@ -11,6 +11,10 @@
     color: $base-gold;
 }
 
+.header-catalog-back{
+    cursor: pointer;
+}
+
 @media (max-width: 1000px) {
 .catalog__heder-slogo{
     margin-top: 50px;

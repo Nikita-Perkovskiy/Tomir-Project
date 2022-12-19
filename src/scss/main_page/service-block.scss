@@ -60,6 +60,21 @@
    }
 }
 
+.service-block__content-icon-wrapper{
+flex-shrink: 0;
+width: 141px;
+height: 141px;
+border-radius: 50%;
+overflow: hidden;
+background-color: $base-gold;
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+}
+
 .service-block__content-text{
   @include base-information-content;
   vertical-align: middle;
@@ -67,11 +82,11 @@
 }
 
 @media (max-width: 1000px){
-.service-block__content-title{
-  img{
-    width: 100px;
+  
+.service-block__content-icon-wrapper{
+  width: 100px;
+  height: 100px;
   }
-}
 
 .service-block__slogo{
  @include main-titles-1000px;
@@ -113,11 +128,11 @@
 }
 
 @media (max-width: 550px) {
-  .service-block__content-title{
-  img{
-    width: 60px;
+
+  .service-block__content-icon-wrapper{
+  width: 60px;
+  height: 60px;
   }
-}
 
 .service-block__content-text{
   @include base-information-content-550px;
