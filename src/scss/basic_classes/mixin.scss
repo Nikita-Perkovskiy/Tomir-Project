@@ -140,9 +140,9 @@
 }
 
 @mixin slider-text {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 18px;
   text-transform: uppercase;
   color: $base-white;
 }
@@ -152,7 +152,7 @@
   font-weight: 600;
   line-height: 18px;
   text-transform: uppercase;
-  color: $base-gold;
+  color: $base-white;
 }
 
 @mixin slider-text-790px {
@@ -160,7 +160,7 @@
   font-weight: 600;
   line-height: 16px;
   text-transform: uppercase;
-  color: $base-gold;
+  color:  $base-white;
 }
 
 @mixin main-fon-text {
@@ -236,9 +236,9 @@
 
 @mixin question-content-550px{
   text-align: center;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 12px;
+  line-height: 16px;
   color: $base-black;
 }
 

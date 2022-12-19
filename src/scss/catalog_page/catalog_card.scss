@@ -41,8 +41,6 @@
 .catalog-section__content-header{
   @include slider-text;
   text-align: center;
-  color: $base-gold;
-  margin: 4% 0% 4% 0%;
   cursor: pointer;
 }
 
@@ -75,7 +73,7 @@
  font-weight: 600;
  line-height: 20px;
  text-align: left;
- padding: 3% 0% 3% 5%;
+ padding: 5% 0% 0% 5%;
 }
 
 .catalog-section__card:hover{

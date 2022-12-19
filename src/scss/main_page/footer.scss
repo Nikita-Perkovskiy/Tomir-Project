@@ -98,6 +98,16 @@ a:hover{
    }
 }
 
+.footer-nav__svg-wrapper{
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-nav__svg-item{
+  margin: 0px 5px 0px 0px;
+}
+
 @media (max-width: 1000px){
 .footer{
     margin-top: 100px;
@@ -154,15 +164,6 @@ a:hover{
      padding-left: 10px;
 
 }
-}
-
-.footer-nav__svg-wrapper{
-  display: flex;
-  justify-content: flex-start;
-}
-
-.footer-nav__svg-item{
-  margin: 1px 3px 1px 0px;
 }
 
 @media (max-width: 790px){
