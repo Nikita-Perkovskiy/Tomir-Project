@@ -17,13 +17,25 @@
 
 .education-block__fon {
   position: relative;
-  background-image: url("../img/education-block-fon.png");
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: $base-gray;
   max-height: 647px;
   height: 100vh;
   background-size: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
+  .education-block__img-wrapper{
+    position: absolute;
+inset: 0;
+max-height: 647px;
+ height: 100vh;
+overflow: hidden;
+  img{
+width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+}
 }
 
 .education-block__wrapper {

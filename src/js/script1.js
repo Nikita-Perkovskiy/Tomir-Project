@@ -10,21 +10,19 @@ function asctionSlidr1() {
 
 
 function setAnimationHeader() {
-  let i = 0;
-  function animationHeader() {
-    const headerBlockImages = [
-      "../img/header-slider-fon-1.png",
-      "../img/header-slider-fon-2.png",
-      "../img/header-slider-fon-3.png",
-    ];
-    const slogoBlock = document.querySelector(".header-slogo__background");
-    slogoBlock.style.backgroundImage = `url(${headerBlockImages[i]})`;
-    i += 1;
-    if (i == headerBlockImages.length) {
+  const headerItems = Array.from(document.querySelectorAll(".header-slogo__background-item"));
+ 
+let i = 0;
+function animationHeader() {
+headerItems[i].style.display = "block";
+headerItems.map((el, index) => index === i ? el.style.display = "block" : el.style.display = "none" )
+i += 1;
+    if (i === headerItems.length) {
       i = 0;
     }
-  }
-  setInterval(animationHeader, 2000);
+}
+
+setInterval(animationHeader, 2000);
 }
 
 window.addEventListener("load", setAnimationHeader, onEntry);
