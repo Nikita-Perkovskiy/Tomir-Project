@@ -6,10 +6,17 @@
   margin-top: 81px;
   max-height: 899px;
   height: 100vh;
-  background-color: $base-gray;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+.header-slogo__background::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $base-black;
+  opacity: 0.4;
 }
 
 .header-slogo__content-wrap {
