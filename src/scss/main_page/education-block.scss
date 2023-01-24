@@ -101,7 +101,7 @@ max-width: 900px;
 .education-block__footer{
   @include base-proportion;
   @include base-information-content;
-  text-align: justify;
+  text-align: center;
   border: 2px solid $base-gold;
   padding: 2% 5% 2% 5%;
 }

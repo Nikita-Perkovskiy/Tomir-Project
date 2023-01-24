@@ -34,13 +34,13 @@
         @include question-number;
     }
 
-   :nth-child(2){
-        @include question-content;
-        max-width: 650px;
-        width: 100vw;
-        min-height: 80px;
-        text-align: center;
-    }
+//    :nth-child(2){
+//         @include question-content;
+//         max-width: 650px;
+//         width: 100vw;
+//         min-height: 80px;
+//         text-align: center;
+//     }
 }
 
 .question-block__content-number{
@@ -53,6 +53,11 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+        @include question-content;
+        max-width: 650px;
+        width: 100vw;
+        min-height: 80px;
+        text-align: left;
 }
 
 .question-block__content-arrow-el{
