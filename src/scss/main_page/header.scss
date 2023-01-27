@@ -5,12 +5,15 @@
   width: 100%;
   background-color: $base-white;
   height: 81px;
-  position: fixed;
-z-index: 1000000000000000000000;
+z-index: 9000;
+width: 100%;
+}
+
+.header-nav-container__fixed{
+position: fixed;
 top: 0;
 left: 0;
 right: 0;
-width: 100%;
 }
 
 .header-nav-wrapper {

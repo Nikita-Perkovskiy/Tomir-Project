@@ -1,0 +1,65 @@
+@import "./basic_classes/vars.scss";
+@import "./basic_classes/mixin.scss";
+
+.for-main-page{
+    position: absolute;
+    text-decoration: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    bottom: 15%;
+    right: 5%;
+    z-index: 9000;
+    cursor: pointer; 
+    background-color: $base-gold;
+}
+
+.for-main-page::after{
+    content: " ";
+    top: 50%;
+    margin-top: -15px;
+    margin-right: -23px;
+    right: 50%;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-top: 5px solid $base-white;
+    border-right: 5px solid $base-white;
+    transform: rotate(316deg);
+}
+
+@media (max-width: 790px){
+    .for-main-page{
+    width: 70px;
+    height: 70px;
+    bottom: 40%;
+    right: 5%;
+    }
+
+    .for-main-page::after{
+    margin-top: -12px;
+    margin-right: -17px;
+    width: 30px;
+    height: 30px;
+    transform: rotate(316deg);
+}
+}
+
+@media (max-width: 550px){
+  .for-main-page{
+    width: 60px;
+    height: 60px;
+    bottom: 35%;
+    right: 5%;
+    }
+
+    .for-main-page::after{
+    margin-top: -8px;
+    margin-right: -12px;
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid $base-white;
+    border-right: 3px solid $base-white;
+    transform: rotate(316deg);
+   }
+}

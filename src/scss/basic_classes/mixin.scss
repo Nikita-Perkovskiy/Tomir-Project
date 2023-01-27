@@ -117,24 +117,10 @@
   width: 68px;
   position: absolute;
   top: 40%;
-  z-index: 1000000;
+  z-index: 100;
   font-size: 0;
   border: none;
   background-color: $base-gold;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-@mixin slider-button-790px {
-  height: 68px;
-  width: 68px;
-  position: absolute;
-  top: 40%;
-  z-index: 1000000;
-  font-size: 0;
-  border: none;
-  opacity: 0.6;
-  // background-color: rgba(255,245,215,0.5);
   border-radius: 50%;
   cursor: pointer;
 }

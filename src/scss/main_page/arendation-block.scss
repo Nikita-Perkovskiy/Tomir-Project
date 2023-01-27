@@ -170,16 +170,6 @@ display: none;
   text-align: center;
   padding-top: 5%;
 }
-
-.arendation-block-slider {
- .slick-arrow.slick-prev {
-    @include slider-button-790px ;
-  }
-
-  .slick-arrow.slick-next {
-    @include slider-button-790px ;
-  }
-}
 }
 
 @media (max-width: 715px) {
