@@ -9,13 +9,6 @@ z-index: 9000;
 width: 100%;
 }
 
-.header-nav-container__fixed{
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-}
-
 .header-nav-wrapper {
   @include base-proportion;
  //background-color: $base-white;

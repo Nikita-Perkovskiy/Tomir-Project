@@ -139,10 +139,10 @@ body {
   cursor: default;
 }
 
-@import "./main_page/header.scss";
 @import "./basic_classes/vars.scss";
 @import "./basic_classes/burger.scss";
 @import "./basic_classes/mixin.scss";
+@import "./main_page/header.scss";
 @import "./main_page/main-information.scss";
 @import "./main_page/arendation-block.scss";
 @import "./main_page/education-block.scss";
@@ -152,6 +152,7 @@ body {
 @import "./main_page/question-block.scss";
 @import "./main_page/footer.scss";
 @import "./main_page/header-slider.scss";
+@import "./main_page/spare-parts-block.scss";
 @import "./active_class/active-class.scss";
 @import "./catalog_page/catalog_basic.scss";
 @import "./catalog_page/catalog_card.scss";
